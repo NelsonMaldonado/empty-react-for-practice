@@ -1,12 +1,9 @@
 import React from "react"
 import useSound from "use-sound"
 import styled from "styled-components"
-// import conga from "src/public/sounds/conga.mp3"
-
+import yeee from "../sounds/conga.mp3"
 const SoundEffect = () => {
-  const press = () => {
-    console.log("playing sound")
-  }
+  const [press] = useSound(yeee, { volume: 1 })
 
   return (
     <div>
